@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja online de jogos e produtos digitais">
+    <!-- Ícones Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>GameStore - Sua loja de jogos digitais</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <h1 class="m-0">Games Store</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar jogos...">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                    <div class="ms-3">
+                        <a href="carrinho.html" class="btn btn-outline-light position-relative">
+                            Carrinho
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="position-sticky pt-3">
+                    <div class="p-3">
+                        <h5 class="mb-3">Filtrar por:</h5>
+
+                        <h6 class="sidebar-heading mt-4 mb-1 text-muted">
+                            Categorias
+                        </h6>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="acao.html">
+                                    <i class="bi bi-controller me-2"></i> Ação
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="acao.html">
+                                    <i class="bi bi-shield me-2"></i> RPG
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="esportes.html">
+                                    <i class="bi bi-joystick me-2"></i> Esportes
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h6 class="sidebar-heading text-muted">
+                        Faixa de Preço
+                    </h6>
+                    <div class="px-2">
+                        <div id="price-slider" class="mb-3"></div>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="number" class="form-control form-control-sm" id="min-price"
+                                    placeholder="Min">
+                            </div>
+                            <div class="col-6">
+                                <input type="number" class="form-control form-control-sm" id="max-price"
+                                    placeholder="Max">
+                            </div>
+                        </div>
+                    </div>
+            </nav>
+
+            <!-- Conteúdo principal -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+
+                <section>
+                    <h1>Os melhores Jogos de Ação com descontos exclusivos!</h1>
+
+
+                </section>
+                <section class="mb-5">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                        <!-- Produto 1 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <a href="sekiro.html"><img src="img/sekiro.jpg" class="card-img-top"
+                                        alt="Sekiro: Shadows Die Twice"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sekiro: Shadows Die Twice</h5>
+                                    <p class="card-text">Jogo de ação e aventura ambientado no Japão feudal com combate
+                                        preciso e mecânicas de furtividade.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="sekiro.html"><button type="button"
+                                                    class="btn btn-sm btn-outline-primary">Detalhes</button></a>
+                                            <a href="carrinho.html"><button type="button"
+                                                    class="btn btn-sm btn-primary">Comprar</button></a>
+                                        </div>
+                                        <small class="text-success fw-bold">R$ 149,90</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Produto 2 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <a href="elderring.html"><img src="img/elder ring.jpg" class="card-img-top"
+                                        alt="Elden Ring"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Elden Ring</h5>
+                                    <p class="card-text">Um novo RPG de ação e fantasia ambientado em um mundo cheio de
+                                        mistérios.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="elderring.html"><button type="button"
+                                                    class="btn btn-sm btn-outline-primary">Detalhes</button></a>
+                                            <a href="carrinho.html"><button type="button"
+                                                    class="btn btn-sm btn-primary">Comprar</button></a>
+                                        </div>
+                                        <small class="text-success fw-bold">R$ 199,90</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Produto 3 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <a href="baldursgate3.html"><img src="img/baldurs_gate_3-01.jpg" class="card-img-top"
+                                        alt="Baldur's gate 3"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Baldur's Gate 3</h5>
+                                    <p class="card-text">Uma nova aventura no mundo do RPG de mesa Dungeons & Dragons
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="baldursgate3.html"> <button type="button"
+                                                    class="btn btn-sm btn-outline-primary">Detalhes</button></a>
+                                            <a href="carrinho.html"><button type="button"
+                                                    class="btn btn-sm btn-primary">Comprar</button></a>
+                                        </div>
+                                        <small class="text-success fw-bold">R$ 179,90</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Produto 4 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <a href="blackmyth.html"><img src="img/blackmw.jpg" class="card-img-top"
+                                        alt="black myth wukong"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Black Myth WUkong</h5>
+                                    <p class="card-text">jogo de RPG de ação baseado no romance chinês clássico do
+                                        século 16, Journey to the
+                                        West.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="blackmyth.html"><button type="button"
+                                                    class="btn btn-sm btn-outline-primary">Detalhes</button></a>
+                                            <a href="carrinho.html"><button type="button"
+                                                    class="btn btn-sm btn-primary">Comprar</button></a>
+                                        </div>
+                                        <small class="text-success fw-bold">R$ 129,90</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                        <!-- Produto 1 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    Novo
+                                </span>
+                                <a href="mafia3.html"><img src="img/mafia3.jpg" class="card-img-top"
+                                        alt="Mafia III"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Mafia III</h5>
+                                    <p class="card-text">Jogo de ação e mundo aberto ambientado em Nova Orleans dos anos
+                                        1960, com uma história de vingança.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="mafia3.html"><button type="button"
+                                                    class="btn btn-sm btn-outline-primary">Detalhes</button></a>
+                                            <a href="carrinho.html"><button type="button"
+                                                    class="btn btn-sm btn-primary">Comprar</button></a>
+                                        </div>
+                                        <small class="text-success fw-bold">R$ 99,90</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Produto 2 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    Novo
+                                </span>
+                                <a href="hades2.html"><img src="img/hades2.jpg" class="card-img-top" alt="Hades II"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Hades II</h5>
+                                    <p class="card-text">Sequência do aclamado roguelike com nova protagonista e mais
+                                        desafios no submundo.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="hades2.html"><button type="button"
+                                                    class="btn btn-sm btn-outline-primary">Detalhes</button></a>
+                                            <a href="hades2.html"><button type="button"
+                                                    class="btn btn-sm btn-primary">Comprar</button>
+                                                <a href="carrinho.html"><button type="button"
+                                                        class="btn btn-sm btn-primary">Comprar</button></a>
+                                        </div>
+                                        <small class="text-success fw-bold">R$ 119,90</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Produto 3 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    Novo
+                                </span>
+                                <a href="assassins.html"><img src="img/assassins creed valhalla.jpg"
+                                        class="card-img-top" alt="Assassin's Creed Valhalla"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Assassin's Creed Valhalla</h5>
+                                    <p class="card-text">Explore a era dos vikings neste capítulo da famosa série de
+                                        ação e aventura.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="assassins.html"><button type="button"
+                                                    class="btn btn-sm btn-outline-primary">Detalhes</button></a>
+                                            <a href="carrinho.html"><button type="button"
+                                                    class="btn btn-sm btn-primary">Comprar</button></a>
+                                        </div>
+                                        <small class="text-success fw-bold">R$ 159,90</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Produto 4 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <a href="yakuza.html"><img src="img/yakuza.jpg" class="card-img-top"
+                                        alt="Yakuza: Like a Dragon"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Yakuza: Like a Dragon</h5>
+                                    <p class="card-text">Uma nova aventura na série Yakuza com um novo protagonista e
+                                        sistema de batalha por turnos.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="yakuza.html"><button type="button"
+                                                    class="btn btn-sm btn-outline-primary">Detalhes</button></a>
+                                            <a href="carrinho.html"><button type="button"
+                                                    class="btn btn-sm btn-primary">Comprar</button></a>
+                                        </div>
+                                        <small class="text-success fw-bold">R$ 179,90</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="mb-4"><i class="bi bi-chat-square-quote me-2"></i> Depoimentos</h2>
+                    <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <img src="img/pessoa3.jpeg" class="rounded-circle mb-3" width="80"
+                                            alt="Cliente 1">
+                                        <h5 class="card-title">Maria Silva</h5>
+                                        <div class="mb-2">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"Comprei vários jogos na GameStore e sempre tive uma ótima
+                                            experiência. Entrega rápida e preços competitivos!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <img src="img/pessoa2.jpeg" class="rounded-circle mb-3" width="80"
+                                            alt="Cliente 2">
+                                        <h5 class="card-title">Maria Oliveira</h5>
+                                        <div class="mb-2">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-half text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"Adoro as promoções que eles fazem. Sempre encontro os
+                                            jogos que quero por um preço bom."</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <img src="img/pessoa3.jpg" class="rounded-circle mb-3" width="80"
+                                            alt="Cliente 3">
+                                        <h5 class="card-title">Carlos Souza</h5>
+                                        <div class="mb-2">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"Atendimento excelente! Me ajudaram a resolver um problema
+                                            com minha compra de forma rápida e eficiente."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <div class="card bg-light">
+                        <div class="card-body p-5 text-center">
+                            <h2 class="mb-4">Assine nossa Newsletter</h2>
+                            <p class="mb-4">Receba as melhores ofertas e novidades diretamente no seu e-mail</p>
+                            <form class="row g-3 justify-content-center">
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control form-control-lg"
+                                        placeholder="Seu melhor e-mail" required>
+                                </div>
+                                <div class="col-md-2">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">Assinar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">GameStore</h5>
+                    <p>Sua loja de jogos digitais com os melhores preços e promoções.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripty.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Myth: Wukong | GameStore</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header (igual ao da página principal) -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <h1 class="m-0">Games Store</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar jogos..." />
+            <button class="btn btn-outline-light" type="submit">
+              Buscar
+            </button>
+          </form>
+          <div class="ms-3">
+            <a href="carrinho.html" class="btn btn-outline-light position-relative">
+              Carrinho
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <!-- Seção Principal do Jogo -->
+    <section class="row">
+      <!-- Galeria de Imagens -->
+      <div class="col-lg-6">
+        <div class="main-image mb-3">
+          <img id="mainImage" src="img/blackmw.jpg" class="img-fluid rounded-3" alt="Black Myth: Wukong">
+        </div>
+
+        <!-- Vídeo do Jogo -->
+        <div class="mt-4 ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_mAnlVXtDD8?si=5dTIOodqFiHPfDQk"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- Informações e Compra -->
+      <div class="col-lg-6">
+        <h1 class="mb-3">Black Myth: Wukong</h1>
+
+        <div class="d-flex align-items-center mb-3">
+          <div class="me-3">
+            <span class="badge bg-warning text-dark">Pré-venda</span>
+          </div>
+          <div class="rating">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-half text-warning"></i>
+            <span class="ms-2">4.7/5 (Avaliação baseada em demonstrações)</span>
+          </div>
+        </div>
+
+        <div class="game-price mb-4">
+          <div class="d-flex align-items-center">
+            <span class="h3 text-danger me-3">R$ 249,90</span>
+           
+            <span class="badge bg-danger ms-2">-17%</span>
+          </div>
+          <small class="text-success">Economize R$ 50,00</small>
+          <div class="mt-2">
+            <small class="text-muted">Lançamento: 20/08/2024</small>
+          </div>
+        </div>
+
+        <!-- Plataformas -->
+        <div class="platforms mb-4">
+          <h5 class="mb-2">Plataformas disponíveis:</h5>
+          <div class="btn-group" role="group">
+            <input type="radio" class="btn-check" name="platform" id="platform1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="platform1">PS5</label>
+
+            <input type="radio" class="btn-check" name="platform" id="platform2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="platform2">Xbox Series X</label>
+
+            <input type="radio" class="btn-check" name="platform" id="platform3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="platform3">PC</label>
+          </div>
+        </div>
+
+        <!-- Opções de Compra -->
+        <div class="purchase-options mb-4">
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary btn-lg">
+              <i class="bi bi-cart-fill"></i> Pré-venda Agora
+            </button>
+            <a href="carrinho.html">
+              <button class="btn btn-outline-primary btn-lg">
+                <i class="bi bi-cart-plus"></i> Adicionar ao Carrinho
+              </button>
+            </a>
+            <button class="btn btn-outline-secondary">
+              <i class="bi bi-heart"></i> Adicionar à Lista de Desejos
+            </button>
+          </div>
+        </div>
+
+        <!-- Detalhes Rápidos -->
+        <div class="game-details mb-4">
+          <h5 class="mb-3">Detalhes do Jogo</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><strong>Desenvolvedor:</strong> Game Science</li>
+            <li class="mb-2"><strong>Publicador:</strong> Game Science</li>
+            <li class="mb-2"><strong>Data de Lançamento:</strong> 20/08/2024</li>
+            <li class="mb-2"><strong>Gênero:</strong> Ação, RPG, Aventura</li>
+            <li class="mb-2"><strong>Classificação:</strong> +16</li>
+          </ul>
+        </div>
+
+        <!-- Compartilhar -->
+        <div class="share-buttons">
+          <h5 class="mb-2">Compartilhar:</h5>
+          <button class="btn btn-sm btn-outline-dark me-2"><i class="bi bi-facebook"></i></button>
+          <button class="btn btn-sm btn-outline-dark me-2"><i class="bi bi-twitter"></i></button>
+          <button class="btn btn-sm btn-outline-dark me-2"><i class="bi bi-whatsapp"></i></button>
+          <button class="btn btn-sm btn-outline-dark"><i class="bi bi-link-45deg"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Descrição Detalhada -->
+    <section class="row mt-5">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Sobre este jogo</h3>
+            <p class="card-text">Black Myth: Wukong é um ambicioso RPG de ação inspirado no clássico romance chinês
+              "Jornada ao Oeste". Com gráficos deslumbrantes e um combate preciso, o jogo coloca você no papel do
+              Destined One, uma versão poderosa do Rei Macaco Sun Wukong, em uma jornada épica através de paisagens
+              mitológicas chinesas repletas de criaturas lendárias.</p>
+
+            <h4 class="mt-4">História</h4>
+            <p>Baseado na mitologia chinesa, você assume o papel do Destined One, herdeiro de um legado esquecido que
+              agora deve enfrentar inúmeros desafios. Em um mundo onde deuses e demônios disputam poder, apenas o
+              verdadeiro herói poderá desvendar os segredos por trás do caos que ameaça a ordem celestial. Sua jornada o
+              levará através de templos antigos, florestas encantadas e reinos celestiais, enfrentando criaturas
+              colossais e desvendando mistérios profundos.</p>
+
+            <h4 class="mt-4">Características Principais</h4>
+            <ul>
+              <li>Sistema de combate preciso e variado com mais de 72 transformações</li>
+              <li>Mundo aberto inspirado na mitologia chinesa com locais icônicos</li>
+              <li>Gráficos de última geração com tecnologia Ray Tracing</li>
+              <li>Inimigos únicos baseados no folclore chinês</li>
+              <li>Sistema de progressão profundo com habilidades especiais</li>
+              <li>História rica com múltiplos finais</li>
+              <li>Trilha sonora orquestral tradicional chinesa</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Requisitos do Sistema -->
+    <section class="row mt-4">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Requisitos do Sistema (PC)</h3>
+
+            <div class="row">
+              <div class="col-md-6">
+                <h5 class="mt-3">Mínimos</h5>
+                <ul>
+                  <li>SO: Windows 10 64-bit</li>
+                  <li>Processador: Intel Core i5-8400 / AMD Ryzen 5 2600</li>
+                  <li>Memória: 16 GB de RAM</li>
+                  <li>Placa de vídeo: NVIDIA GTX 1060 6GB / AMD RX 580 8GB</li>
+                  <li>Armazenamento: 80 GB de espaço disponível (HDD)</li>
+                  <li>DirectX: Versão 12</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h5 class="mt-3">Recomendados</h5>
+                <ul>
+                  <li>SO: Windows 10/11 64-bit</li>
+                  <li>Processador: Intel Core i7-10700 / AMD Ryzen 7 3700X</li>
+                  <li>Memória: 32 GB de RAM</li>
+                  <li>Placa de vídeo: NVIDIA RTX 3060 Ti / AMD RX 6700 XT (8GB+ VRAM)</li>
+                  <li>Armazenamento: 80 GB de espaço disponível (SSD)</li>
+                  <li>DirectX: Versão 12</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (igual ao da página principal) -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">© 2025 GameStore. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

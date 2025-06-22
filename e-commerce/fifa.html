@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA 23 | GameStore</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (igual ao da página principal) -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <h1 class="m-0">Games Store</h1>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                  </li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Buscar jogos..."
+                  />
+                  <button class="btn btn-outline-light" type="submit">
+                    Buscar
+                  </button>
+                </form>
+                <div class="ms-3">
+                  <a
+                    href="carrinho.html"
+                    class="btn btn-outline-light position-relative"
+                  >
+                    Carrinho
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    >
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main class="container my-5">
+        <!-- Seção Principal do Jogo -->
+        <section class="row">
+            <!-- Galeria de Imagens -->
+            <div class="col-lg-6">
+                <div class="main-image mb-3">
+                    <img id="mainImage" src="img/fifa.jpg" class="img-fluid rounded-3" alt="FIFA 23">
+                </div>
+                
+                <!-- Vídeo do Jogo -->
+                <div class="mt-4 ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/o3V-GvvzjE4" title="Trailer FIFA 23" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Informações e Compra -->
+            <div class="col-lg-6">
+                <h1 class="mb-3">FIFA 23</h1>
+                
+                <div class="d-flex align-items-center mb-3">
+                    <div class="me-3">
+                        <span class="badge bg-success">Disponível</span>
+                    </div>
+                    <div class="rating">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                        <span class="ms-2">4.5/5 (8.742 avaliações)</span>
+                    </div>
+                </div>
+
+                <div class="game-price mb-4">
+                    <div class="d-flex align-items-center">
+                        <span class="h3 text-danger me-3">R$ 199,90</span>
+                        <span class="text-decoration-line-through text-muted">R$ 299,90</span>
+                        <span class="badge bg-danger ms-2">-33%</span>
+                    </div>
+                    <small class="text-success">Economize R$ 100,00</small>
+                </div>
+
+                <!-- Plataformas -->
+                <div class="platforms mb-4">
+                    <h5 class="mb-2">Plataformas disponíveis:</h5>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="platform" id="platform1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="platform1">PS5</label>
+
+                        <input type="radio" class="btn-check" name="platform" id="platform2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="platform2">Xbox Series X</label>
+
+                        <input type="radio" class="btn-check" name="platform" id="platform3" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="platform3">PC</label>
+                    </div>
+                </div>
+
+                <!-- Opções de Compra -->
+                <div class="purchase-options mb-4">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary btn-lg">
+                            <i class="bi bi-cart-fill"></i> Comprar Agora
+                        </button>
+                        <a href="carrinho.html">
+                          <button class="btn btn-outline-primary btn-lg">
+                            <i class="bi bi-cart-plus"></i> Adicionar ao Carrinho
+                        </button>
+                      </a>
+                        <button class="btn btn-outline-secondary">
+                            <i class="bi bi-heart"></i> Adicionar à Lista de Desejos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Detalhes Rápidos -->
+                <div class="game-details mb-4">
+                    <h5 class="mb-3">Detalhes do Jogo</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><strong>Desenvolvedor:</strong> EA Vancouver & EA Romania</li>
+                        <li class="mb-2"><strong>Publicador:</strong> Electronic Arts</li>
+                        <li class="mb-2"><strong>Data de Lançamento:</strong> 30/09/2022</li>
+                        <li class="mb-2"><strong>Gênero:</strong> Esportes, Futebol</li>
+                        <li class="mb-2"><strong>Classificação:</strong> Livre</li>
+                    </ul>
+                </div>
+
+                <!-- Compartilhar -->
+                <div class="share-buttons">
+                    <h5 class="mb-2">Compartilhar:</h5>
+                    <button class="btn btn-sm btn-outline-dark me-2"><i class="bi bi-facebook"></i></button>
+                    <button class="btn btn-sm btn-outline-dark me-2"><i class="bi bi-twitter"></i></button>
+                    <button class="btn btn-sm btn-outline-dark me-2"><i class="bi bi-whatsapp"></i></button>
+                    <button class="btn btn-sm btn-outline-dark"><i class="bi bi-link-45deg"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Descrição Detalhada -->
+        <section class="row mt-5">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Sobre este jogo</h3>
+                        <p class="card-text">FIFA 23 traz o jogo de futebol mais autêntico com os torneios mais populares do mundo, incluindo a UEFA Champions League, a Premier League, a Bundesliga, a LaLiga Santander, a CONMEBOL Libertadores e muito mais. Com tecnologia HyperMotion2 que proporciona animações ainda mais realistas e a inclusão de times femininos, FIFA 23 oferece a experiência mais completa do mundo do futebol.</p>
+                        
+                        <h4 class="mt-4">Novidades do FIFA 23</h4>
+                        <p>O FIFA 23 apresenta a Copa do Mundo FIFA™ masculina e feminina, tecnologia HyperMotion2 aprimorada, mais de 19.000 jogadores, 700 times, 100 estádios e mais de 30 ligas. Pela primeira vez, inclui a Barclays FA Women's Super League e a Division 1 Arkema francesa.</p>
+                        
+                        <h4 class="mt-4">Características Principais</h4>
+                        <ul>
+                            <li>Tecnologia HyperMotion2 para animações mais realistas</li>
+                            <li>Modo Carreira totalmente renovado</li>
+                            <li>Inclusão de times femininos e competições</li>
+                            <li>Sistema de aceleração explosiva que muda a maneira como os jogadores correm</li>
+                            <li>Física de chute e remate totalmente redesenhada</li>
+                            <li>Modo Ultimate Team com novos heróis e ícones</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requisitos do Sistema -->
+        <section class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Requisitos do Sistema</h3>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="mt-3">Mínimos</h5>
+                                <ul>
+                                    <li>SO: Windows 10 64-bit</li>
+                                    <li>Processador: Intel Core i5-6600K / AMD Ryzen 5 1600</li>
+                                    <li>Memória: 8 GB de RAM</li>
+                                    <li>Placa de vídeo: NVIDIA GTX 1050 Ti / AMD Radeon RX 570</li>
+                                    <li>Armazenamento: 100 GB de espaço disponível</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="mt-3">Recomendados</h5>
+                                <ul>
+                                    <li>SO: Windows 10 64-bit</li>
+                                    <li>Processador: Intel Core i7-6700 / AMD Ryzen 7 2700X</li>
+                                    <li>Memória: 12 GB de RAM</li>
+                                    <li>Placa de vídeo: NVIDIA GTX 1660 / AMD RX 5600 XT</li>
+                                    <li>Armazenamento: 100 GB de espaço disponível (SSD)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (igual ao da página principal) -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <p class="mb-0">© 2025 GameStore. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        // Troca de imagens na galeria
+        function changeImage(element) {
+            const mainImage = document.getElementById('mainImage');
+            mainImage.src = element.src.replace('-thumb', '-large');
+            
+            // Remove a classe active de todas as thumbnails
+            document.querySelectorAll('.img-thumbnail').forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            
+            // Adiciona a classe active apenas na thumbnail clicada
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>

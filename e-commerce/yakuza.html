@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yakuza: Like a Dragon | GameStore</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <h1 class="m-0">Games Store</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar jogos..." />
+            <button class="btn btn-outline-light" type="submit">
+              Buscar
+            </button>
+          </form>
+          <div class="ms-3">
+            <a href="carrinho.html" class="btn btn-outline-light position-relative">
+              Carrinho
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <!-- Seção Principal do Jogo -->
+    <section class="row">
+      <!-- Galeria de Imagens -->
+      <div class="col-lg-6">
+        <div class="main-image mb-3">
+          <img id="mainImage" src="img/yakuza.jpg" class="img-fluid rounded-3" alt="Yakuza: Like a Dragon">
+        </div>
+
+        <!-- Vídeo do Jogo -->
+        <div class="mt-4 ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/hhqbNaxO82g?si=Nt7ubGppOkZ5WbuQ"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- Informações e Compra -->
+      <div class="col-lg-6">
+        <h1 class="mb-3">Yakuza: Like a Dragon</h1>
+
+        <div class="d-flex align-items-center mb-3">
+          <div class="me-3">
+            <span class="badge bg-success">Disponível</span>
+          </div>
+          <div class="rating">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <span class="ms-2">4.9/5 (5.327 avaliações)</span>
+          </div>
+        </div>
+
+        <div class="game-price mb-4">
+          <div class="d-flex align-items-center">
+            <span class="h3 text-danger me-3">R$ 129,90</span>
+            <span class="text-decoration-line-through text-muted">R$ 259,90</span>
+            <span class="badge bg-danger ms-2">-50%</span>
+          </div>
+          <small class="text-success">Economize R$ 130,00</small>
+        </div>
+
+        <!-- Plataformas -->
+        <div class="platforms mb-4">
+          <h5 class="mb-2">Plataformas disponíveis:</h5>
+          <div class="btn-group" role="group">
+            <input type="radio" class="btn-check" name="platform" id="platform1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="platform1">PS5</label>
+
+            <input type="radio" class="btn-check" name="platform" id="platform2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="platform2">Xbox Series X</label>
+
+            <input type="radio" class="btn-check" name="platform" id="platform3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="platform3">PC</label>
+          </div>
+        </div>
+
+        <!-- Opções de Compra -->
+        <div class="purchase-options mb-4">
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary btn-lg">
+              <i class="bi bi-cart-fill"></i> Comprar Agora
+            </button>
+            <a href="carrinho.html">
+              <button class="btn btn-outline-primary btn-lg">
+                <i class="bi bi-cart-plus"></i> Adicionar ao Carrinho
+              </button>
+            </a>
+            <button class="btn btn-outline-secondary">
+              <i class="bi bi-heart"></i> Adicionar à Lista de Desejos
+            </button>
+          </div>
+        </div>
+
+        <!-- Detalhes Rápidos -->
+        <div class="game-details mb-4">
+          <h5 class="mb-3">Detalhes do Jogo</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><strong>Desenvolvedor:</strong> Ryu Ga Gotoku Studio</li>
+            <li class="mb-2"><strong>Publicador:</strong> SEGA</li>
+            <li class="mb-2"><strong>Data de Lançamento:</strong> 10/11/2020</li>
+            <li class="mb-2"><strong>Gênero:</strong> RPG, Ação, Aventura</li>
+            <li class="mb-2"><strong>Classificação:</strong> +18</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Descrição Detalhada -->
+    <section class="row mt-5">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Sobre este jogo</h3>
+            <p class="card-text">Yakuza: Like a Dragon é uma reinvenção radical da aclamada série Yakuza, apresentando
+              pela primeira vez um sistema de combate por turnos inspirado em RPGs clássicos. Siga a jornada de Ichiban
+              Kasuga, um ex-membro da yakuza que passa 18 anos na prisão por um crime que não cometeu, apenas para
+              descobrir que seu clã o traiu. Com um novo grupo de aliados improváveis, Kasuga embarca em uma missão para
+              se vingar e descobrir a verdade por trás de sua traição.</p>
+
+            <h4 class="mt-4">História</h4>
+            <p>Em 2001, Ichiban Kasuga, um membro de baixo escalão da família Arakawa, se sacrifica para proteger seu
+              patriarca e é condenado a 18 anos de prisão. Ao ser libertado em 2019, ele descobre que ninguém o esperava
+              na saída e que sua família yakuza o abandonou. Sem dinheiro, amigos ou futuro, Kasuga viaja para Yokohama
+              para descobrir a verdade por trás de sua traição. Lá, ele forma laços com um grupo de marginais e começa
+              uma nova vida enquanto busca respostas em meio ao submundo criminoso de Isezaki Ijincho.</p>
+
+            <h4 class="mt-4">Características Principais</h4>
+            <ul>
+              <li>Novo sistema de combate por turnos com elementos de RPG</li>
+              <li>Protagonista completamente novo: Ichiban Kasuga</li>
+              <li>Cenário inédito: Distrito de Yokohama (3x maior que Kamurocho)</li>
+              <li>Sistema de "Classes" único com profissões variadas</li>
+              <li>Minigames abundantes incluindo kart racing, gerenciamento de negócios e mais</li>
+              <li>História emocionante com temas maduros e momentos hilários</li>
+              <li>Mais de 50 horas de conteúdo principal + atividades secundárias</li>
+              <li>Dublagem completa em inglês e japonês</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Requisitos do Sistema -->
+    <section class="row mt-4">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Requisitos do Sistema (PC)</h3>
+
+            <div class="row">
+              <div class="col-md-6">
+                <h5 class="mt-3">Mínimos</h5>
+                <ul>
+                  <li>SO: Windows 10 (64-bit)</li>
+                  <li>Processador: Intel Core i5-3470 / AMD FX-8350</li>
+                  <li>Memória: 8 GB de RAM</li>
+                  <li>Placa de vídeo: NVIDIA GeForce GTX 660 / AMD Radeon HD 7870</li>
+                  <li>Armazenamento: 40 GB de espaço disponível</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h5 class="mt-3">Recomendados</h5>
+                <ul>
+                  <li>SO: Windows 10 (64-bit)</li>
+                  <li>Processador: Intel Core i7-6700 / AMD Ryzen 5 1400</li>
+                  <li>Memória: 16 GB de RAM</li>
+                  <li>Placa de vídeo: NVIDIA GeForce GTX 1060 / AMD Radeon RX 580</li>
+                  <li>Armazenamento: 40 GB de espaço disponível (SSD recomendado)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">© 2025 GameStore. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

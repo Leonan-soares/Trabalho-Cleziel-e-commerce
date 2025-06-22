@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Os melhores jogos de esportes para todas as plataformas">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>Jogos de Esportes | GameStore</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <h1 class="m-0">Games Store</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="esportes.html">Esportes</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar jogos...">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                    <div class="ms-3">
+                        <a href="carrinho.html" class="btn btn-outline-light position-relative">
+                            Carrinho
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="position-sticky pt-3">
+                    <div class="p-3">
+                        <h5 class="mb-3">Filtrar por:</h5>
+
+                        <h6 class="sidebar-heading mt-4 mb-1 text-muted">Categorias</h6>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="acao.html">
+                                    <i class="bi bi-controller me-2"></i> Ação
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="acao.html">
+                                    <i class="bi bi-shield me-2"></i> RPG
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="esportes.html">
+                                    <i class="bi bi-joystick me-2"></i> Esportes
+                                </a>
+                            </li>
+                        </ul>
+
+                        <h6 class="sidebar-heading text-muted">
+                            Faixa de Preço
+                        </h6>
+                        <div class="px-2">
+                            <div id="price-slider" class="mb-3"></div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="number" class="form-control form-control-sm" id="min-price"
+                                        placeholder="Min">
+                                </div>
+                                <div class="col-6">
+                                    <input type="number" class="form-control form-control-sm" id="max-price"
+                                        placeholder="Max">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Conteúdo principal -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <!-- Destaques -->
+                <section class="mb-5">
+                    <h2 class="mb-4"><i class="bi bi-stars me-2"></i> Destaques</h2>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <!-- Destaque 1 - EA Sports FC 24 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <span class="position-absolute top-0 start-0 bg-danger text-white p-2">-30%</span>
+                                <a href="#"><img src="img/fc24.avif" class="card-img-top" alt="EA Sports FC 24"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">EA Sports FC 24</h5>
+                                    <p class="card-text">A nova era do futebol virtual com HyperMotionV, PlayStyles
+                                        otimizados pela Opta e o melhor do futebol mundial.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="#"><button type="button"
+                                                    class="btn btn-sm btn-outline-primary">Detalhes</button></a>
+                                            <a href="carrinho.html"><button type="button"
+                                                    class="btn btn-sm btn-primary">Comprar</button></a>
+                                        </div>
+                                        <div>
+                                            <small class="text-decoration-line-through text-muted">R$ 299,90</small>
+                                            <small class="text-success fw-bold ms-2">R$ 209,90</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Destaque 2 - NBA 2K24 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <span class="position-absolute top-0 start-0 bg-danger text-white p-2">-25%</span>
+                                <a href="#"><img src="img/nba24.jpg" class="card-img-top" alt="NBA 2K24"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">NBA 2K24</h5>
+                                    <p class="card-text">A mais autêntica experiência de basquete com Kobe Bryant na
+                                        capa e novo sistema de progressão MyPLAYER.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="#"><button type="button"
+                                                    class="btn btn-sm btn-outline-primary">Detalhes</button></a>
+                                            <a href="carrinho.html"><button type="button"
+                                                    class="btn btn-sm btn-primary">Comprar</button></a>
+                                        </div>
+                                        <div>
+                                            <small class="text-decoration-line-through text-muted">R$ 279,90</small>
+                                            <small class="text-success fw-bold ms-2">R$ 209,90</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Destaque 3 - F1 23 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <span class="position-absolute top-0 start-0 bg-danger text-white p-2">-40%</span>
+                                <a href="#"><img src="img/f1 23.jpg" class="card-img-top" alt="F1 23"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">F1 23</h5>
+                                    <p class="card-text">A emoção da Fórmula 1 com todos os pilotos, equipes e circuitos
+                                        da temporada 2023, incluindo o Las Vegas GP.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="#"><button type="button"
+                                                    class="btn btn-sm btn-outline-primary">Detalhes</button></a>
+                                            <a href="carrinho.html"><button type="button"
+                                                    class="btn btn-sm btn-primary">Comprar</button></a>
+                                        </div>
+                                        <div>
+                                            <small class="text-decoration-line-through text-muted">R$ 249,90</small>
+                                            <small class="text-success fw-bold ms-2">R$ 149,90</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <!-- Destaque 4 - UFC 5 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <span class="position-absolute top-0 start-0 bg-danger text-white p-2">-30%</span>
+                                <a href="#"><img src="img/ufc5.avif" class="card-img-top" alt="UFC 5"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">UFC 5</h5>
+                                    <p class="card-text">O mais realista jogo de MMA com novo sistema de danos e mais de
+                                        300 lutadores do roster atual.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="#"><button type="button"
+                                                    class="btn btn-sm btn-outline-primary">Detalhes</button></a>
+                                            <a href="carrinho.html"><button type="button"
+                                                    class="btn btn-sm btn-primary">Comprar</button></a>
+                                        </div>
+                                        <div>
+                                            <small class="text-decoration-line-through text-muted">R$ 299,90</small>
+                                            <small class="text-success fw-bold ms-2">R$ 209,90</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Destaque 5 - Tony Hawk's Pro Skater 1+2 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <span class="position-absolute top-0 start-0 bg-danger text-white p-2">-25%</span>
+                                <a href="#"><img src="img/tony haws.jpg" class="card-img-top"
+                                        alt="Tony Hawk's Pro Skater 1+2"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Tony Hawk's Pro Skater 1+2</h5>
+                                    <p class="card-text">Remasterização dos clássicos de skate com gráficos modernos,
+                                        trilha sonora original e novas mecânicas.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="#"><button type="button"
+                                                    class="btn btn-sm btn-outline-primary">Detalhes</button></a>
+                                            <a href="carrinho.html"><button type="button"
+                                                    class="btn btn-sm btn-primary">Comprar</button></a>
+                                        </div>
+                                        <div>
+                                            <small class="text-decoration-line-through text-muted">R$ 199,90</small>
+                                            <small class="text-success fw-bold ms-2">R$ 149,90</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Destaque 6 - EA Sports FC 25 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <span class="position-absolute top-0 start-0 bg-danger text-white p-2">-15%</span>
+                                <a href="#"><img src="img/fc25.jpg" class="card-img-top" alt="EA Sports FC 25"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">EA Sports FC 25</h5>
+                                    <p class="card-text">A próxima evolução do futebol virtual com novos modos de jogo e
+                                        tecnologia de ponta na simulação esportiva.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="#"><button type="button"
+                                                    class="btn btn-sm btn-outline-primary">Detalhes</button></a>
+                                            <a href="carrinho.html"><button type="button"
+                                                    class="btn btn-sm btn-primary">Comprar</button></a>
+                                        </div>
+                                        <div>
+                                            <small class="text-decoration-line-through text-muted">R$ 349,90</small>
+                                            <small class="text-success fw-bold ms-2">R$ 297,90</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">GameStore</h5>
+                    <p>Sua loja de jogos digitais com os melhores preços e promoções.</p>
+                    <hr>
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 GameStore. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS via CDN -->
+     <script src="js/scripty.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

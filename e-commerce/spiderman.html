@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel's Spider-Man 2 | GameStore</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header (igual ao da página principal) -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <h1 class="m-0">Games Store</h1>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Buscar jogos..."
+                  />
+                  <button class="btn btn-outline-light" type="submit">
+                    Buscar
+                  </button>
+                </form>
+                <div class="ms-3">
+                  <a
+                    href="carrinho.html"
+                    class="btn btn-outline-light position-relative"
+                  >
+                    Carrinho
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    >
+                      3
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main class="container my-5">
+        <!-- Seção Principal do Jogo -->
+        <section class="row">
+            <!-- Galeria de Imagens -->
+            <div class="col-lg-6">
+                <div class="main-image mb-3">
+                    <img id="mainImage" src="img/spiderman2.jpg" class="img-fluid rounded-3" alt="Spider-man 2">
+                </div>
+        
+                
+                <!-- Vídeo do Jogo -->
+                <div class="mt-4 ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ENf1yjCMpZo?si=c2YSBpCgkO_oq2ri" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Informações e Compra -->
+            <div class="col-lg-6">
+                <h1 class="mb-3">Marvel's Spider-Man 2</h1>
+                
+                <div class="d-flex align-items-center mb-3">
+                    <div class="me-3">
+                        <span class="badge bg-success">Disponível</span>
+                    </div>
+                    <div class="rating">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <span class="ms-2">4.9/5 (5.678 avaliações)</span>
+                    </div>
+                </div>
+
+                <div class="game-price mb-4">
+                    <div class="d-flex align-items-center">
+                        <span class="h3 text-danger me-3">R$ 349,90</span>
+                        <span class="text-decoration-line-through text-muted">R$ 399,90</span>
+                        <span class="badge bg-danger ms-2">-12%</span>
+                    </div>
+                    <small class="text-success">Economize R$ 50,00</small>
+                </div>
+
+                <!-- Plataformas -->
+                <div class="platforms mb-4">
+                    <h5 class="mb-2">Plataformas disponíveis:</h5>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="platform" id="platform1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="platform1">PS5</label>
+                    </div>
+                    <small class="text-muted">Exclusivo para PlayStation 5</small>
+                </div>
+
+                <!-- Opções de Compra -->
+                <div class="purchase-options mb-4">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary btn-lg">
+                            <i class="bi bi-cart-fill"></i> Comprar Agora
+                        </button>
+                        <button class="btn btn-outline-primary btn-lg">
+                            <i class="bi bi-cart-plus"></i> Adicionar ao Carrinho
+                        </button>
+                        <button class="btn btn-outline-secondary">
+                            <i class="bi bi-heart"></i> Adicionar à Lista de Desejos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Detalhes Rápidos -->
+                <div class="game-details mb-4">
+                    <h5 class="mb-3">Detalhes do Jogo</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><strong>Desenvolvedor:</strong> Insomniac Games</li>
+                        <li class="mb-2"><strong>Publicador:</strong> Sony Interactive Entertainment</li>
+                        <li class="mb-2"><strong>Data de Lançamento:</strong> 20/10/2023</li>
+                        <li class="mb-2"><strong>Gênero:</strong> Ação, Aventura</li>
+                        <li class="mb-2"><strong>Classificação:</strong> +16</li>
+                    </ul>
+                </div>
+
+                <!-- Compartilhar -->
+                <div class="share-buttons">
+                    <h5 class="mb-2">Compartilhar:</h5>
+                    <button class="btn btn-sm btn-outline-dark me-2"><i class="bi bi-facebook"></i></button>
+                    <button class="btn btn-sm btn-outline-dark me-2"><i class="bi bi-twitter"></i></button>
+                    <button class="btn btn-sm btn-outline-dark me-2"><i class="bi bi-whatsapp"></i></button>
+                    <button class="btn btn-sm btn-outline-dark"><i class="bi bi-link-45deg"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Descrição Detalhada -->
+        <section class="row mt-5">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Sobre este jogo</h3>
+                        <p class="card-text">Marvel's Spider-Man 2 é a sequência aclamada da franquia de sucesso da Insomniac Games, trazendo Peter Parker e Miles Morales em uma emocionante aventura pelo universo do Homem-Aranha, com gráficos impressionantes e gameplay aprimorada exclusivamente para PlayStation 5.</p>
+                        
+                        <h4 class="mt-4">História</h4>
+                        <p>Peter Parker e Miles Morales retornam em uma nova e emocionante aventura no universo do Homem-Aranha para PS5. Neste capítulo da saga Spider-Man da Insomniac, os dois heróis devem enfrentar o icônico vilão Venom, enquanto equilibram suas vidas pessoais e o peso de proteger Nova York. Com a chegada de novos vilões e aliados, a cidade nunca esteve em maior perigo.</p>
+                        
+                        <h4 class="mt-4">Características Principais</h4>
+                        <ul>
+                            <li>Jogue como Peter Parker e Miles Morales em uma narrativa emocionante</li>
+                            <li>Nova York ampliada com Brooklyn e Queens para explorar</li>
+                            <li>Novas habilidades e trajes para ambos os Homens-Aranha</li>
+                            <li>Combate aprimorado com movimentos mais fluidos e dinâmicos</li>
+                            <li>Gráficos impressionantes com ray tracing e tempos de carregamento quase instantâneos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requisitos do Sistema -->
+        <section class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Requisitos do Sistema</h3>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="mt-3">Exclusivo para PS5</h5>
+                                <ul>
+                                    <li>Requer console PlayStation 5</li>
+                                    <li>Espaço necessário no SSD: 98 GB</li>
+                                    <li>Compatível com recursos do DualSense</li>
+                                    <li>Suporte a 4K dinâmico e até 120fps</li>
+                                    <li>Ray tracing em tempo real</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="mt-3">Recursos Exclusivos</h5>
+                                <ul>
+                                    <li>Feedback háptico avançado</li>
+                                    <li>Gatilhos adaptáveis do DualSense</li>
+                                    <li>Tempos de carregamento ultra-rápidos</li>
+                                    <li>Áudio 3D imersivo</li>
+                                    <li>Modo Performance e Fidelidade</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (igual ao da página principal) -->
+    <footer>
+        [Seu footer aqui]
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        // Troca de imagens na galeria
+        function changeImage(element) {
+            const mainImage = document.getElementById('mainImage');
+            mainImage.src = element.src.replace('-thumb', '-large');
+            
+            // Remove a classe active de todas as thumbnails
+            document.querySelectorAll('.img-thumbnail').forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            
+            // Adiciona a classe active apenas na thumbnail clicada
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>

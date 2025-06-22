@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | GameStore</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <h1 class="m-0">Games Store</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contato.html">Contato</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar jogos..." />
+            <button class="btn btn-outline-light" type="submit">
+              Buscar
+            </button>
+          </form>
+          <div class="ms-3">
+            <a href="carrinho.html" class="btn btn-outline-light position-relative">
+              Carrinho
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <!-- Título da Página -->
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <h1 class="display-4">Fale Conosco</h1>
+        <p class="lead">Tem dúvidas, sugestões ou precisa de ajuda? Entre em contato com nossa equipe!</p>
+      </div>
+    </div>
+
+    <!-- Seção de Contato -->
+    <section class="row g-4">
+      <!-- Formulário de Contato -->
+      <div class="col-lg-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body p-4">
+            <h2 class="card-title mb-4">Envie uma Mensagem</h2>
+            <form>
+              <div class="mb-3">
+                <label for="nome" class="form-label">Seu Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="assunto" class="form-label">Assunto</label>
+                <select class="form-select" id="assunto" required>
+                  <option value="" selected disabled>Selecione...</option>
+                  <option value="duvida">Dúvida sobre produtos</option>
+                  <option value="pedido">Status do pedido</option>
+                  <option value="trocas">Trocas e devoluções</option>
+                  <option value="sugestao">Sugestão</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="5" required></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  Enviar Mensagem
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Informações de Contato -->
+      <div class="col-lg-6">
+        <div class="row h-100 g-4">
+          <!-- Cartão de Endereço -->
+          <div class="col-md-6">
+            <div class="card shadow-sm h-100 contact-card">
+              <div class="card-body text-center p-4">
+                <i class="bi bi-geo-alt-fill contact-icon"></i>
+                <h3>Endereço</h3>
+                <p class="mb-0">
+                  Av. programação para internet, 1234<br>
+                  Centro, Alegre - ES<br>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cartão de Telefone -->
+          <div class="col-md-6">
+            <div class="card shadow-sm h-100 contact-card">
+              <div class="card-body text-center p-4">
+                <i class="bi bi-telephone-fill contact-icon"></i>
+                <h3>Telefone</h3>
+                <p class="mb-0">
+                  (12) 3456-7890 <br>
+                  (12) 98765-4321 (WhatsApp)<br>
+                  Seg-Sex: 9h às 18h
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cartão de E-mail -->
+          <div class="col-md-6">
+            <div class="card shadow-sm h-100 contact-card">
+              <div class="card-body text-center p-4">
+                <i class="bi bi-envelope-fill contact-icon"></i>
+                <h3>E-mail</h3>
+                <p class="mb-0">
+                  contato@gamestore.com.br<br>
+                  suporte@gamestore.com.br<br>
+                  sac@gamestore.com.br
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cartão de Redes Sociais -->
+          <div class="col-md-6">
+            <div class="card shadow-sm h-100 contact-card">
+              <div class="card-body text-center p-4">
+                <i class="bi bi-people-fill contact-icon"></i>
+                <h3>Redes Sociais</h3>
+                <div class="d-flex justify-content-center gap-3">
+                  <a href="#" class="btn btn-outline-primary">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="#" class="btn btn-outline-primary">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="#" class="btn btn-outline-primary">
+                    <i class="bi bi-twitter-x"></i>
+                  </a>
+                  <a href="#" class="btn btn-outline-primary">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mapa -->
+    <section class="row mt-5">
+      <div class="col-12">
+        <div class="card shadow-sm">
+          <div class="card-body p-0">
+            <h2 class="card-title p-4 pb-0">Onde Estamos</h2>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.7501594023!2d-41.45956482386413!3d-20.760918164722124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbbe9d8664f6aed%3A0x1f6d50411da14cb2!2sIfes%20-%20Campus%20de%20Alegre!5e0!3m2!1spt-BR!2sbr!4v1750520599514!5m2!1spt-BR!2sbr"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h3>GameStore</h3>
+          <p>A maior loja de games do Brasil, com os melhores preços e lançamentos.</p>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6 mb-4">
+          <h5>Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white">Início</a></li>
+            <li class="mb-2"><a href="contato.html" class="text-white">Contato</a></li>
+          </ul>
+      <div class="text-center">
+        <p class="mb-0">© 2025 GameStore. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
