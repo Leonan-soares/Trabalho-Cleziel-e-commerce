@@ -142,13 +142,13 @@ Para rodar o site localmente, siga os passos abaixo:
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/Leonan-soares/e-commerce.git
+   git clone https://github.com/Leonan-soares/Trabalho-Cleziel-e-commerce.git
    ```
 
 2. Navegue até o diretório do projeto:
 
    ```bash
-   cd e-commerce
+   cd Trabalho-Cleziel-e-commerce
    ```
 
 3. Instale às dependências:
