@@ -1,5 +1,7 @@
 # Loja de jogos E-Commerce - Trabalho Cleziel
 
+Alunos: Leonan Soares, Emanuel Landi, Hyago Marinho
+
 ![index](index1.png)
 
 ## Descrição 📋
